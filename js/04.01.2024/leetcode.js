@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var minOperations = function(nums) {
+var minOperations = function (nums) {
     nums.sort((a, b) => a - b);
 
     let res = 0;
