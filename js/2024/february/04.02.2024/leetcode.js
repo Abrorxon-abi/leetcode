@@ -3,6 +3,7 @@
  * @param {string} t
  * @return {string}
  */
+
 var minWindow = function (s, t) {
   let charCount = new Map();
   let requiredChars = t.length;
