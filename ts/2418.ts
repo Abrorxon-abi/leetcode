@@ -1,6 +1,6 @@
 function sortPeople(names: string[], heights: number[]): string[] {
   const ans = [];
-  const obj = {};
+  const obj: Record<string, string> = {};
   for (let i = 0; i < names.length; i++) {
     obj[heights[i]] = names[i];
   }
