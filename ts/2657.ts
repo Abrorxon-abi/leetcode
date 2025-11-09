@@ -1,6 +1,6 @@
 function findThePrefixCommonArray(A: number[], B: number[]): number[] {
-  const a = new Set([]);
-  const b = new Set([]);
+  const a = new Set<number>([]);
+  const b = new Set<number>([]);
   const ans = [];
 
   for (let i = 0; i < A.length; i++) {
