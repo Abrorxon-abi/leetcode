@@ -27,4 +27,6 @@ function guessNumber(n: number): number {
       left = mid;
     }
   }
+
+  return -1;
 }
