@@ -1,5 +1,5 @@
 function reverseDegree(s: string): number {
-  const reversedAlphabet = {
+  const reversedAlphabet: Record<string, number> = {
     z: 1,
     y: 2,
     x: 3,
