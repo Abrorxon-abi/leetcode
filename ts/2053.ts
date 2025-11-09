@@ -1,5 +1,5 @@
 function kthDistinct(arr: string[], k: number): string {
-  let obj = {};
+  let obj: Record<string, number> = {};
   for (let c of arr) {
     obj[c] = (obj[c] || 0) + 1;
   }
