@@ -21,7 +21,8 @@ function largestGoodInteger(num: string): string {
   }
 
   if (repeatedNums.length > 1) {
-    return Math.max(...repeatedNums).toString();
+    const maxNum = Math.max(...repeatedNums.map(Number));
+    return maxNum.toString().padStart(3, "0");
   } else if (repeatedNums.length === 1) {
     return repeatedNums[0];
   }
