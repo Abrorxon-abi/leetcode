@@ -12,7 +12,7 @@ function successfulPairs(
   return ans;
 }
 
-function binarySearch(arr, num) {
+function binarySearch(arr: number[], num: number) {
   let left = 0;
   let right = arr.length - 1;
 
