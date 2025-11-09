@@ -1,6 +1,6 @@
 function maxFreqSum(s: string): number {
   const vowels = "aoeui";
-  const obj = {};
+  const obj: Record<string, number> = {};
 
   for (const char of s) {
     obj[char] = (obj[char] || 0) + 1;
