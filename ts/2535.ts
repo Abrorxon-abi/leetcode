@@ -17,7 +17,7 @@ function differenceOfSum(nums: number[]): number {
   return Math.abs(num1 - num2);
 }
 
-function getDigitsMathematically(number) {
+function getDigitsMathematically(number: number) {
   const digits = [];
 
   while (number > 0) {
