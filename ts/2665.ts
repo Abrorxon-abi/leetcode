@@ -2,7 +2,7 @@
  * @param {integer} init
  * @return { increment: Function, decrement: Function, reset: Function }
  */
-var createCounter = function (init) {
+var createCounter = function (init: number) {
   let counter = init;
   function increment() {
     return ++counter;
