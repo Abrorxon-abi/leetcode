@@ -17,10 +17,10 @@ function minimumSum(num: number): number {
       let max = 0;
       let min = 0;
       if (qstr.length) {
-        max = qstr.pop();
+        max = qstr.pop()!;
       }
       if (qstr.length) {
-        min = qstr.shift();
+        min = qstr.shift()!;
       }
 
       acc += +`${min}${max}`;
