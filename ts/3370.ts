@@ -4,4 +4,6 @@ function smallestNumber(n: number): number {
     if (2 ** k - 1 >= n) return 2 ** k - 1;
     k++;
   }
+
+  return -1;
 }
