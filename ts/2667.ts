@@ -1,5 +1,5 @@
 function createHelloWorld() {
-  return function (...args): string {
+  return function (): string {
     return "Hello World";
   };
 }
