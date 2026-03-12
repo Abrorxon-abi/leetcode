@@ -3,7 +3,7 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
   return findMiddleElements(arr);
 }
 
-function findMiddleElements(arr) {
+function findMiddleElements(arr: number[]) {
   const mid = arr.length / 2;
 
   if (arr.length % 2 === 1) {
