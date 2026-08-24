@@ -9,10 +9,11 @@ impl Solution {
         let n = nums.len();
 
         for i in 0..n {
+            let mut set = HashSet::new();
+
             for j in i..n {
-                let subarray = &nums[i..j + 1];
-                let numbers: HashSet<i32> = subarray.iter().copied().collect();
-                counter += (numbers.len() * numbers.len()) as i32;
+                set.insert(nums[j]);
+                counter += (set.len() * set.len()) as i32;
             }
         }
 
